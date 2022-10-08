@@ -1,4 +1,11 @@
-require "options"       -- General Options for standard neovim
-require "keymaps"       -- Basic Keymaps (more are inside of whichkey)
-require "plugins"       -- Plugin manager
-require "colorscheme"   -- Colorscheme configuration
+require 'impatient'
+
+require "user.options"       -- General Options for standard neovim
+require "user.keymaps"       -- Basic Keymaps (more are inside of whichkey)
+require "user.plugins"       -- Plugin manager
+require "user.colorscheme"   -- Colorscheme configuration
+
+require "user.cmp"           -- Completion and Snippets
+require "user.treesitter"    -- Highlighting and other Syntax Tree Operations
+require "user.lsp"           -- Language Server
+require "user.editing"       -- Editing Stuff
