@@ -68,7 +68,6 @@ return packer.startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use 'nvim-treesitter/playground'
     use 'p00f/nvim-ts-rainbow'
-    use 'nvim-treesitter/nvim-treesitter-context'
 
     -- Language Server
     use 'neovim/nvim-lspconfig'

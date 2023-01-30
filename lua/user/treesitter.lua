@@ -20,11 +20,3 @@ configs.setup({
         extended_mode = true,
     }
 })
-
-local context_status_ok, context = pcall(require, 'treesitter-context')
-if not context_status_ok then
-    vim.notify('Could not load treesitter context module')
-    return
-end
-
-context.setup()

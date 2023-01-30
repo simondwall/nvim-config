@@ -18,8 +18,17 @@ end
 
 mason.setup()
 mason_lspconfig.setup({
-    ensure_installed = { 'sumneko_lua', 'rust_analyzer', 'svelte', 'gopls', 'html-lsp', 'json-lsp',
-        'yaml-language-server', 'python-lsp-server', 'marksman', 'css-lsp'
+    ensure_installed = {
+        'sumneko_lua',
+        'rust_analyzer',
+        'svelte',
+        'gopls',
+        -- 'html-lsp',
+        -- 'json-lsp',
+        -- 'yaml-language-server',
+        -- 'python-lsp-server',
+        'marksman',
+        -- 'css-lsp'
     }
 })
 
@@ -27,7 +36,7 @@ lspconfig.sumneko_lua.setup({
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' }
+                globals = { 'vim', 'twk' }
             }
         }
     }
@@ -41,3 +50,5 @@ lspconfig.yamlls.setup({})
 lspconfig.pylsp.setup({})
 lspconfig.marksman.setup({})
 lspconfig.cssls.setup({})
+lspconfig.texlab.setup({})
+lspconfig.grammarly.setup({})
