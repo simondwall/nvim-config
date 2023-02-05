@@ -41,7 +41,7 @@ lspconfig.sumneko_lua.setup({
         }
     }
 })
-lspconfig.rust_analyzer.setup({})
+-- lspconfig.rust_analyzer.setup({})
 lspconfig.svelte.setup({})
 lspconfig.gopls.setup({})
 lspconfig.html.setup({})

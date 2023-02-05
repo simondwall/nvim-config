@@ -9,3 +9,5 @@ require "user.cmp"           -- Completion and Snippets
 require "user.treesitter"    -- Highlighting and other Syntax Tree Operations
 require "user.lsp"           -- Language Server
 require "user.editing"       -- Editing Stuff
+
+require "user.rust"          -- Rust tools

@@ -74,6 +74,9 @@ return packer.startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
 
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+
     -- Zen Mode
     use 'folke/zen-mode.nvim'
     use 'folke/twilight.nvim'
@@ -81,6 +84,13 @@ return packer.startup(function(use)
     -- Editing
     use "terrortylor/nvim-comment"
     use "kylechui/nvim-surround"
+
+    -- Telescope
+    use 'nvim-telescope/telescope.nvim'
+
+    -- Language specific
+    -- Rust
+    use 'simrat39/rust-tools.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
