@@ -87,10 +87,7 @@ return packer.startup(function(use)
 
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
-
-    -- Language specific
-    -- Rust
-    use 'simrat39/rust-tools.nvim'
+    use 'nvim-telescope/telescope-dap.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
