@@ -13,4 +13,6 @@ require "user.editing"       -- Editing Stuff
 require "user.debug"         -- Debugging
 require "user.telescope"     -- Telescope
 
+require "user.whichkey"
+
 require "user.libmodal"

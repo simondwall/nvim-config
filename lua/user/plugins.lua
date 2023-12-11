@@ -96,6 +96,9 @@ return packer.startup(function(use)
     -- Typing
     use 'BooleanCube/keylab.nvim'
 
+    -- Which Key
+    use 'folke/which-key.nvim'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
