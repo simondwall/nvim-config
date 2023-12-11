@@ -1,8 +1,7 @@
 local mason_status_ok, mason = pcall(require, 'mason')
 if not mason_status_ok then
     vim.notify('Could not load mason')
-    return
-end
+    return end
 
 local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
 if not mason_lspconfig_status_ok then
@@ -19,7 +18,6 @@ end
 mason.setup()
 mason_lspconfig.setup({
     ensure_installed = {
-        'sumneko_lua',
         'rust_analyzer',
         'svelte',
         'gopls',
@@ -29,19 +27,20 @@ mason_lspconfig.setup({
         -- 'python-lsp-server',
         'marksman',
         -- 'css-lsp'
+        'wgsl_analyzer',
     }
 })
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim', 'twk' }
+                globals = { 'vim' }
             }
         }
     }
 })
--- lspconfig.rust_analyzer.setup({})
+lspconfig.rust_analyzer.setup({})
 lspconfig.svelte.setup({})
 lspconfig.gopls.setup({})
 lspconfig.html.setup({})
@@ -51,3 +50,7 @@ lspconfig.pylsp.setup({})
 lspconfig.marksman.setup({})
 lspconfig.cssls.setup({})
 lspconfig.texlab.setup({})
+lspconfig.prismals.setup({})
+lspconfig.tsserver.setup({})
+lspconfig.clangd.setup({})
+lspconfig.wgsl_analyzer.setup({})

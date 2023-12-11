@@ -76,6 +76,7 @@ return packer.startup(function(use)
 
     -- Debugging
     use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
 
     -- Zen Mode
     use 'folke/zen-mode.nvim'
@@ -88,6 +89,12 @@ return packer.startup(function(use)
     -- Telescope
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-dap.nvim'
+
+    -- Create own mode
+    use 'Iron-E/nvim-libmodal'
+
+    -- Typing
+    use 'BooleanCube/keylab.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
